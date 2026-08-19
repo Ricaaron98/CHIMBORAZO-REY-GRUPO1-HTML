@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chimborazo Rey | Inicio</title>
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Caudex:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <!-- Botón Hamburguesa -->
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+
+        <!-- BLOQUE 1: Menú a la izquierda -->
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="index.html" data-i18n="inicio">Inicio</a></li>
+                <li><a href="lodge.html" data-i18n="lodge">Lodge</a></li>
+                <li><a href="travel.html" data-i18n="travel">Travel</a></li>
+                <li><a href="restaurantes.html" data-i18n="restaurantes">Restaurante</a></li>
+                <li><a href="#galeria" data-i18n="galeria">Galería</a></li>
+                <li><a href="#contacto" data-i18n="contacto">Contacto</a></li>
+                <li><a href="#faq" data-i18n="FAQ">PF</a></li>
+            </ul>
+        </nav>
+
+        <!-- BLOQUE 2: Logo al centro -->
+        <div class="logo-container">
+            <img src="Imagenes/logo2.png" alt="Logo Chimborazo Rey" class="logo-header">
+        </div>
+
+        <!-- BLOQUE 3: Selector de idiomas a la derecha -->
+        <div class="selector-idioma">
+            <img src="https://flagcdn.com/w40/us.png" alt="English" id="btn-en" class="bandera">
+            <span class="separador">/</span>
+            <img src="https://flagcdn.com/w40/es.png" alt="Español" id="btn-es" class="bandera activo">
+        </div>
+    </header>
+
+    <main>
+        <!-- SECCIÓN HERO PRINCIPAL -->
+        <div class="hero__contenido">
+            <p class="hero__kicker">
+                <span class="punto"></span>
+                CHIMBORAZO <span class="rey">REY</span> · TRAVEL EXPLORE <span class="solo-amplio" data-i18n="hero_loc">— GUARANDA, PROVINCIA BOLÍVAR, ECUADOR</span>
+            </p>
+
+            <h1 class="hero__titulo">
+                <span class="hero__linea1" data-i18n="hero_l1">EXPEDICIÓN</span>
+                <span class="hero__linea2" data-i18n="hero_l2">CUMBRE CHIMBORAZO</span>
+                <span class="hero__linea3">6.268 M</span>
+            </h1>
+
+            <p class="hero__eslogan" data-i18n="hero_eslogan">Toca el punto más cercano al sol.</p>
+
+            <p class="hero__bajada" data-i18n="hero_bajada">
+                <p>Nuestra misión es ofrecer una <strong>experiencia turística integral de alta calidad</strong> a los pies del imponente Nevado Chimborazo. 
+                Combinamos el confort de nuestras instalaciones con la calidez de una empresa familiar dedicada al desarrollo sostenible de la comunidad <strong>Cruz del Arenal</strong>. 
+                Para el año 2030, nuestra visión es ser el referente principal de turismo comunitario y sostenible en la provincia de Bolívar y la región andina.</p>
+            </p>
+        </div>
+    <!--
+    <section class="reserva-container">
+        <form action="#" class="reserva-form">
+            
+            <div class="form-group">
+                <label for="destino" data-i18n="label_destino">Destino:</label>
+                <div class="input-container">
+                    <select id="destino" name="destino" required>
+                        <option value="" disabled selected data-i18n="opt_destino_sel">Selecciona un destino</option>
+                        <option value="lodge" data-i18n="lodge_hotel">Lodge Hotel</option>
+                        <option value="travel" data-i18n="travel_explore">Travel Explore</option>
+                        <option value="restaurante" data-i18n="rest_aventura">Restaurante de Aventura</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label data-i18n="label_fechas">Fechas</label>
+                <div class="fechas-container">
+                    <div class="input-container">
+                        <input type="text" placeholder="Entrada" onfocus="(this.type='date')" onblur="(this.type='text')" required data-i18n="ph_entrada">
+                    </div>
+                    <div class="input-container">
+                        <input type="text" placeholder="Salida" onfocus="(this.type='date')" onblur="(this.type='text')" required data-i18n="ph_salida">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="personas" data-i18n="label_personas">Cuantas Personas Viajan?</label>
+                <div class="input-container">
+                    <select id="personas" name="personas">
+                        <option value="1" data-i18n="opt_adultos_1">Adultos: 1</option>
+                        <option value="2" data-i18n="opt_adultos_2">Adultos: 2</option>
+                        <option value="3" data-i18n="opt_adultos_3">Adultos: 3</option>
+                        <option value="4" data-i18n="opt_adultos_4">Adultos: 4</option>
+                        <option value="5+" data-i18n="opt_grupo">Grupo grande</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group btn-group">
+                <button type="submit" class="btn-buscar" data-i18n="btn_buscar">BUSCAR</button>
+            </div>
+
+        </form>
+    </section>-->
+    
+<!-- SECCIÓN EXPERIENCIAS -->
+        <section class="experiencias-section">
+            <div class="experiencias-header" style="text-align: center; margin-bottom: 3rem;">
+                <p class="hero__kicker" style="margin: 0 auto;">
+                    <span class="punto"></span>
+                    LAS MEJORES <span class="rey">EXPERIENCIAS</span> · CON CHIMBORAZO REY <span class="solo-amplio">— HOSPEDAJE, GASTRONOMÍA, AVENTURAS</span>
+                </p>
+            </div>
+
+            <div class="card-container">
+                <!-- TARJETA 1 -->
+                <a href="lodge.html" class="card">
+                    <div class="card-img-wrapper">
+                        <img src="Imagenes/Lodge.png" alt="Lodge Hotel" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="lodge_hotel">LODGE HOTEL</h3>
+                        <p data-i18n="lodge_desc">Descansa frente al volcán más imponente del Ecuador.</p>
+                        <span class="card-link" data-i18n="lodge_link">EXPLORAR ALOJAMIENTO &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- TARJETA 2 -->
+                <a href="travel.html" class="card">
+                    <div class="card-img-wrapper">
+                        <img src="Imagenes/Travel.jpeg" alt="Travel Explore" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="travel_explore">TRAVEL EXPLORE</h3>
+                        <p data-i18n="travel_desc">Vive rutas, nieve y experiencias inolvidables.</p>
+                        <span class="card-link" data-i18n="travel_link">DESCUBRIR AVENTURAS &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- TARJETA 3 -->
+                <a href="restaurantes.html" class="card">
+                    <div class="card-img-wrapper">
+                        <img src="Imagenes/Restaurante.jpeg" alt="Restaurante de Aventura" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="rest_aventura">RESTAURANTE DE AVENTURA</h3>
+                        <p data-i18n="rest_desc">Sabores andinos en un ambiente auténtico.</p>
+                        <span class="card-link" data-i18n="rest_link">VER RESTAURANTE &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- SECCIÓN: GALERÍA -->
+    <section id="galeria">
+        <h2>Galería Chimborazo Rey</h2>
+        <p>Conoce nuestras instalaciones y servicios:</p>
+        <div id="galeriaGrid">
+            <figure data-index="0">
+            <img src="Imagenes/Chimborazo noche estrellada.jpg" alt="El imponente Nevado Chimborazo bajo el sol y en la noche estrellada">
+                <figcaption>El imponente Nevado Chimborazo bajo el sol y en la noche estrellada.</figcaption>
+            </figure>
+            <figure data-index="1">
+                <img src="Imagenes/Alpinistas 1.jpg" alt="Montañistas alcanzando las cumbres del Chimborazo y Carihuairazo">
+                <figcaption>Montañistas alcanzando las cumbres del Chimborazo y Carihuairazo.</figcaption>
+            </figure>
+            <figure data-index="2">
+                <img src="Imagenes/Alpacas.jpg" alt="Vicuñas, llamas y alpacas deambulando libremente en la Reserva de Producción Faunística">
+                <figcaption>Vicuñas, llamas y alpacas deambulando libremente en la Reserva de Producción Faunística.</figcaption>
+            </figure>
+            <figure data-index="3">
+                <img src="Imagenes/lodge.jpg" alt="Interiores rústicos del Lodge con sus estufas y acabados en madera">
+                <figcaption>Interiores rústicos del Lodge con sus estufas y acabados en madera.</figcaption>
+            </figure>
+            <figure data-index="4">
+                <img src="Imagenes/comida.jpg" alt="Platillos gourmet del Restaurante de Aventura y la cerveza artesanal de la casa">
+                <figcaption>Platillos gourmet del Restaurante de Aventura y la cerveza artesanal de la casa.</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: PREGUNTAS FRECUENTES -->
+    <section id="faq">
+        <h2>Preguntas Frecuentes:</h2>
+
+        <div id="listaFaq">
+            <details class="itemFaq">
+                <summary>¿Cuál es el costo de los tours?</summary>
+                <p>El tour al Punto Magnético cuesta $20. El ascenso al Carihuairazo tiene un valor de $140 y la cumbre del Chimborazo $300. Las cabalgatas varían entre $35 y $60.</p>
+            </details>
+            <details class="itemFaq">
+                <summary>¿Qué equipo debo llevar para los ascensos?</summary>
+                <p>Es indispensable llevar ropa de montaña en tres capas (térmica, aislante e impermeable), guantes, gorro, gafas con protección UV, protector solar y un termo para bebidas calientes.</p>
+            </details>
+            <details class="itemFaq">
+                <summary>¿Necesito experiencia previa para subir al Chimborazo?</summary>
+                <p>Aunque el ascenso es técnicamente fácil, se requiere de un <strong>buen estado físico y una adecuada aclimatización</strong> antes de intentar llegar a la cumbre.</p>
+            </details>
+            <details class="itemFaq">
+                <summary>¿Qué incluye el servicio de aventura?</summary>
+                <p>Por lo general, los paquetes incluyen transporte privado, guías certificados (Aseguim-Mintur), equipo técnico de montaña, alimentación y, en algunos casos, hospedaje.</p>
+            </details>
+        </div>
+        <p id="sinResultadosFaq" hidden>No se encontraron preguntas que coincidan con tu búsqueda.</p>
+    </section>
+
+    </main>
+
+    <footer>
+<!-- SECCIÓN: CONTACTO -->
+    <section id="contacto">
+        <h2>Contacto y Reservas</h2>
+        <p><strong>CEO:</strong> Guido Castro.</p>
+        <p><strong>Teléfono:</strong> <a href="tel:+593968596592">0968596592</a>.</p>
+        <p><strong>Correo electrónico:</strong> <a href="mailto:gustavocc1982@hotmail.com">gustavocc1982@hotmail.com</a>.</p>
+        <p><strong>Dirección:</strong> Sector Cruz del Arenal, Cantón Guaranda, Provincia de Bolívar, Ecuador.</p>
+
+        <!-- FORMULARIO DE CONTACTO -->
+        <form id="formContacto">
+            <fieldset>
+                <legend>Escríbenos</legend>
+                <label for="nombreContacto">Nombre:</label>
+                <input type="text" id="nombreContacto" required>
+                <label for="correoContacto">Correo electrónico:</label>
+                <input type="email" id="correoContacto" required>
+                <label for="mensajeContacto">Mensaje:</label>
+                <textarea id="mensajeContacto" rows="4" required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </fieldset>
+            <p id="mensajeContactoRespuesta" role="status"></p>
+        </form>
+    </section>
+    </footer>
+    <script src="min.js"></script>
+</body>
+</html>

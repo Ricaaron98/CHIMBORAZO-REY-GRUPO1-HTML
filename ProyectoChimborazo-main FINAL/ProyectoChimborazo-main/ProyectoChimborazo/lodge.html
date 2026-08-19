@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lodge - Chimborazo Rey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Caudex:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+     <header class="header-interior">
+        <div class="header-columna">
+            <!-- AQUÍ ESTÁ EL CAMBIO: Tipografía Oswald, mayúsculas y negrita para el Lodge -->
+            <h1 style="font-family: var(--display); font-weight: 700; font-size: clamp(2rem, 4vw, 2.5rem); text-transform: uppercase; letter-spacing: 0.05em; color: white; margin: 0; text-shadow: 0 4px 15px rgba(0,0,0,0.6);">
+                CHIMBORAZO LODGE
+            </h1>
+            
+            <button class="menu-toggle" id="menu-toggle">☰ Menú</button>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html" data-i18n="inicio">Inicio</a></li>
+                    <li><a href="lodge.html" data-i18n="lodge">Lodge</a></li>
+                    <li><a href="travel.html" data-i18n="travel">Travel</a></li>
+                    <li><a href="restaurantes.html" data-i18n="restaurantes">Restaurantes</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="selector-idioma selector-interior">
+            <img src="https://flagcdn.com/w40/us.png" alt="English" id="btn-en" class="bandera">
+            <span class="separador">/</span>
+            <img src="https://flagcdn.com/w40/es.png" alt="Español" id="btn-es" class="bandera activo">
+        </div>
+    </header>
+
+   <main>
+    <!-- Corregido el título para que tenga sentido con el Lodge -->
+    <h2 style="color: white; margin-bottom: 3rem; text-align: center; font-family: var(--display); font-size: clamp(2rem, 4vw, 3rem); text-transform: uppercase; text-shadow: 0 4px 15px rgba(0,0,0,0.6);">
+        Un Refugio en las Alturas
+    </h2>
+
+    <!-- HABITACIÓN 1 -->
+    <article class="tour-card">
+        <div class="tour-image-container">
+            <img src="Imagenes/cuarto grupal.png" alt="Cuarto Grupal" class="tour-image">
+            <button class="btn-favorite">♡</button>
+            <div class="tour-badge">
+            </div>
+        </div>
+        
+        <div class="tour-details">
+            <div class="tour-header">
+                <div class="tour-title-section">
+                    <h3 data-i18n="tour1_title">Habitación Grupal</h3>
+                    <span data-i18n="tour1_loc">Lodge Chimborazo Rey</span>
+                </div>
+                <div class="tour-rating">
+                    <div class="rating-text">
+                        <span class="rating-word" data-i18n="rating_fantastic">Fantástico</span>
+                        <span class="rating-reviews">238 comentarios</span>
+                    </div>
+                    <div class="rating-score">9,5</div>
+                </div>
+            </div>
+
+            <hr class="tour-divider">
+
+            <div class="tour-highlights">
+                <div class="highlight-item">
+                    <span data-i18n="t1_h1">- Vista panorámica del Chimborazo</span>
+                </div>
+                <div class="highlight-item">
+                    <span data-i18n="level_high">- Camas confortables y térmicas</span>
+                </div>
+                <div class="highlight-item">
+                </div>
+                <div class="highlight-item">
+                    <span data-i18n="t1_h3">- Ambiente cálido ideal para grupos</span>
+                </div>
+            </div>
+
+            <hr class="tour-divider">
+
+            <div class="tour-footer">
+                <div class="tour-includes">
+                    <div class="include-item"><span class="include-icon">🛏️</span><span>Camas</span></div>
+                    <div class="include-item"><span class="include-icon">🔥</span><span>Calefacción</span></div>
+                    <div class="include-item"><span class="include-icon">☕</span><span>Desayuno</span></div>
+                    <div class="include-item"><span class="include-icon">🚿</span><span>Ducha</span></div>
+                </div>
+                <div class="tour-price-action">
+                    <div class="tour-price-info">
+                        <span class="price-label" data-i18n="price_label">Precio por noche</span>
+                        <span class="price-amount">US$150</span>
+                    </div>
+                    <a href="https://wa.me/593968596592" target="_blank" class="btn-consultar">Consultar Disponibilidad</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- HABITACIÓN 2 -->
+    <article class="tour-card">
+        <div class="tour-image-container">
+            <img src="Imagenes/cuarto familiar.png" alt="Cuarto Familiar" class="tour-image">
+            <button class="btn-favorite">♡</button>
+            <div class="tour-badge">
+            </div>
+        </div>
+        
+        <div class="tour-details">
+            <div class="tour-header">
+                <div class="tour-title-section">
+                    <h3 data-i18n="tour2_title">Habitación Familiar</h3>
+                    <span data-i18n="tour2_loc">Lodge Chimborazo Rey</span>
+                </div>
+                <div class="tour-rating">
+                    <div class="rating-text">
+                        <span class="rating-word" data-i18n="rating_excellent">Excelente</span>
+                        <span class="rating-reviews">156 comentarios</span>
+                    </div>
+                    <div class="rating-score">9,5</div>
+                </div>
+            </div>
+
+            <hr class="tour-divider">
+
+            <div class="tour-highlights">
+                <div class="highlight-item">
+                    <span data-i18n="t2_h1">- Espacio amplio para la familia</span>
+                </div>
+                <div class="highlight-item">
+                    <span data-i18n="level_mid">- Baño privado con agua caliente</span>
+                </div>
+                <div class="highlight-item">
+                    <span data-i18n="t2_h3">- Decoración rústica andina</span>
+                </div>
+            </div>
+
+            <hr class="tour-divider">
+
+            <div class="tour-footer">
+                <div class="tour-includes">
+                    <div class="include-item"><span class="include-icon">🛏️</span><span>Camas</span></div>
+                    <div class="include-item"><span class="include-icon">🔥</span><span>Calefacción</span></div>
+                    <div class="include-item"><span class="include-icon">☕</span><span>Desayuno</span></div>
+                    <div class="include-item"><span class="include-icon">🚿</span><span>Ducha</span></div>
+                </div>
+                <div class="tour-price-action">
+                    <div class="tour-price-info">
+                        <span class="price-label" data-i18n="price_label">Precio por noche</span>
+                        <span class="price-amount">US$120</span>
+                    </div>
+                    <a href="https://wa.me/593968596592" target="_blank" class="btn-consultar">Consultar Disponibilidad</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- HABITACIÓN 3 -->
+    <article class="tour-card">
+        <div class="tour-image-container">
+            <img src="Imagenes/cuarto matrimonial.png" alt="Cuarto Matrimonial" class="tour-image">
+            <button class="btn-favorite">♡</button>
+            <div class="tour-badge">
+            </div>
+        </div>
+        
+        <div class="tour-details">
+            <div class="tour-header">
+                <div class="tour-title-section">
+                    <h3 data-i18n="tour3_title">Habitación Matrimonial</h3>
+                    <span data-i18n="tour3_loc">Lodge Chimborazo Rey</span>
+                </div>
+                <div class="tour-rating">
+                    <div class="rating-text">
+                        <span class="rating-word" data-i18n="rating_verygood">Muy Bueno</span>
+                        <span class="rating-reviews">98 comentarios</span>
+                    </div>
+                    <div class="rating-score">8,9</div>
+                </div>
+            </div>
+
+            <hr class="tour-divider">
+
+            <div class="tour-highlights">
+                <div class="highlight-item">
+                    <span data-i18n="t3_h1">- Cama matrimonial King Size</span>
+                </div>
+                <div class="highlight-item">
+                    <span data-i18n="level_midhigh">- Privacidad y confort total</span>
+                </div>
+                <div class="highlight-item">
+                    <span data-i18n="t3_h3">- Vista directa hacia el nevado</span>
+                </div>
+            </div>
+
+            <hr class="tour-divider">
+
+            <div class="tour-footer">
+                <div class="tour-includes">
+                    <div class="include-item"><span class="include-icon">🛏️</span><span>Cama King</span></div>
+                    <div class="include-item"><span class="include-icon">🔥</span><span>Calefacción</span></div>
+                    <div class="include-item"><span class="include-icon">☕</span><span>Desayuno</span></div>
+                    <div class="include-item"><span class="include-icon">🚿</span><span>Ducha</span></div>
+                </div>
+                <div class="tour-price-action">
+                    <div class="tour-price-info">
+                        <span class="price-label" data-i18n="price_label">Precio por noche</span>
+                        <span class="price-amount">US$80</span>
+                    </div>
+                    <a href="https://wa.me/593968596592" target="_blank" class="btn-consultar">Consultar Disponibilidad</a>
+                </div>
+            </div>
+        </div>
+    </article>
+</main>
+
+    <footer>
+        <div class="footer-content">
+            <h3 data-i18n="footer_title">Contacto y Ubicación</h3>
+            <p data-i18n="footer_email"><strong>Correo electrónico:</strong> gustavocc1982@hotmail.com</p>
+            <p data-i18n="footer_loc"><strong>Ubicación:</strong> Vía Guaranda-Ambato, Prov. Bolívar (Sector Cruz del Arenal a las faldas del nevado Chimborazo).</p>
+        </div>
+    </footer>
+
+    <!-- CONEXIÓN CON JAVASCRIPT AÑADIDA -->
+    <script src="min.js"></script>
+</body>
+</html>
